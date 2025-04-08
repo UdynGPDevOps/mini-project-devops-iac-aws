@@ -104,19 +104,19 @@ http://localhost:5000
 
 ### ✅ Terraform Apply Output
 
-![Terraform Apply](screenshots/terraform-apply-success.png)
+![Terraform Apply](screenshots/terraform-apply-output.png)
 
 ### ✅ Docker Hub Image
 
-![Docker Hub](screenshots/dockerhub-image-flask-iac-app.png)
+![Docker Hub](screenshots/dockerhub_image.png)
 
 ### ✅ EC2 Instance Running
 
-![EC2 Console](screenshots/aws-ec2-instance-running.png)
+![EC2 Console](screenshots/ec2_instance_running.png)
 
 ### ✅ Flask App in Browser
 
-![Flask App](screenshots/flask-app-on-ec2-browser.png)
+![Flask App](screenshots/flask_app_browser.png)
 
 ---
 
