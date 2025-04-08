@@ -1,3 +1,4 @@
+
 # 🚀 Mini Project 3: DevOps IaC on AWS using Terraform & Docker
 
 This mini project demonstrates how to automate cloud infrastructure provisioning and deploy a containerized Flask application on AWS using **Infrastructure as Code (IaC)** with **Terraform** and **Docker**.
@@ -39,9 +40,8 @@ mini-project-iac-aws/
 │   └── Dockerfile          # Docker image definition
 ├── terraform/
 │   ├── main.tf             # AWS provider and EC2 configuration
-│   ├── variables.tf        # Input variables (if used)
 │   ├── outputs.tf          # Output values
-│   ├── provider.tf         # AWS provider config
+│   ├── provider.tf         # AWS provider config (no hardcoded secrets)
 │   └── deploy.sh           # User data script for EC2 startup
 ├── setup.sh                # Shell script to run Terraform using .env
 ├── .env                    # Stores AWS credentials locally (excluded from git)
@@ -52,7 +52,7 @@ mini-project-iac-aws/
 
 ## 🌐 Flask App Homepage
 
-This app simply displays a styled homepage that summarizes:
+This app displays a styled homepage that summarizes:
 
 - Tools & Technologies used
 - Project intent and learning goals
@@ -83,18 +83,18 @@ Docker Hub: [https://hub.docker.com/r/udyngpaws/flask-iac-app](https://hub.docke
 
 ---
 
-## 🚀 Running the Project (Locally with Minikube)
+## 🚀 Running the Project Locally
 
-You can test locally using Docker:
+You can test the Dockerized Flask app locally:
 
 ```bash
 # Build the image
 docker build -t flask-iac-app ./app
 
-# Run the app
+# Run the container
 docker run -p 5000:5000 flask-iac-app
 
-# Visit
+# Visit the app
 http://localhost:5000
 ```
 
@@ -181,7 +181,7 @@ terraform apply
 
 ## 🙌 Acknowledgements
 
-Special thanks to Podili Sravan Kumar, Manikanta Nandyala, Aravind Ramini and my manager Kesari Suresh from the I&O team at **Medtronic Engineering and Innovation Centre** for their invaluable guidance and support throughout this project.
+Special thanks to **Podili Sravan Kumar**, **Manikanta Nandyala**, **Aravind Ramini** and my manager **Kesari Suresh** from the I&O team at **Medtronic Engineering and Innovation Centre** for their invaluable guidance and support throughout this project.
 
 ---
 
